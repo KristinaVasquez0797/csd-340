@@ -9,6 +9,7 @@ img{
 }
 h1, h3{
     text-align: center;
+    color: rgba(245, 40, 145, 0.8);
 }
 figure{
     text-align: center;
@@ -16,16 +17,35 @@ figure{
 figcaption{
     font-style: italic;
     font-size: .75em;
+    color: rgba(245, 40, 145, 0.8);
 }
 .left{
         grid-column-start: 1;
         grid-column-end: 2;
+        border-width: 2px;
+        border-style: solid;
+        color: rgba(245, 40, 145, 0.8);
+        border-radius: 15px;
 }
 .center{
     grid-column-start: 2;
     grid-column-end: 3;
+    border-width: 2px;
+    border-style: solid;
+    color: rgba(245, 40, 145, 0.8);
+    border-radius: 15px;
 }
 .right{
     grid-column-start: 3;
     grid-column-end: 4;
+    border-width: 2px;
+    border-style: solid;
+    color: rgba(245, 40, 145, 0.8);
+    border-radius: 15px;
+}
+.bottom {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    text-align: right;
 }
