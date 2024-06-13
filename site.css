@@ -1,0 +1,33 @@
+.gentium-book-plus-regular {
+    font-family: "Gentium Book Plus", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+#container{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1,h2,h3,h4{
+    font-family: "Dancing Script", cursive;
+    background-color: #50C878;
+    border-style: solid;
+    border: 1px;
+    border-color: #FFDF00;
+    padding: 10px;
+    color: #FBFBF9;
+
+}
+a{
+    text-decoration: none;
+    color: #08A04B;
+}
+a:hover{
+    background-color: #50C878;
+    color: black;
+}
+a:visited{
+    color: #347C17;
+}

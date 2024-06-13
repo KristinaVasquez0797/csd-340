@@ -1,0 +1,39 @@
+.left {
+    width: 45%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 15px;
+    width: 45%;
+    float: left;
+}
+.right {
+    border-width: 1px;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 15px;
+    width: 45%;
+    float: right;
+}
+.footer {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    text-align: right;
+}
+a{
+    float: right;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+}
+h3 {
+    font-weight: 500;
+}
+ol,ul {
+    font-weight: 300;
+}

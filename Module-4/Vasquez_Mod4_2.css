@@ -1,0 +1,31 @@
+img{
+    height: 50%;
+    width: 48%;
+}
+.image-gallery{
+    margin-top: 10%;
+    display:grid;
+    grid-template-columns: auto;
+}
+h1, h3{
+    text-align: center;
+}
+figure{
+    text-align: center;
+}
+figcaption{
+    font-style: italic;
+    font-size: .75em;
+}
+.left{
+        grid-column-start: 1;
+        grid-column-end: 2;
+}
+.center{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.right{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
