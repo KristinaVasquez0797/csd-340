@@ -1,0 +1,80 @@
+<!--Kristina Vasquez - CSD340-J308 - Assignment 9.3-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    
+    <!-- Pulled Meta Tags from the book and tweaked it to make my own with the exception of "pragma"-->
+    <!-- Duckett, J. (n.d.). HTML and CSS. Retrieved from https://platform.virdocs.com/read/548314/199/#/4/4 -->
+    <meta name="description" content="An introduction to me, Kristina" />
+    <meta name="keywords" content="Kristina, Vasquez, Bellevue"  />
+    <meta http-equiv="author" content="Kristina Vasquez" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <script>
+        var FirstLine = "To be or not to be";
+        var SecLine = "heart-ache and the thousand natural shocks";
+        var ThirdLine = "sleep of death what dreams may come";
+        var LastLine = "love, the laws delay";
+    </script>
+
+</head>
+
+<body>
+    <div id=”container”>
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <!-- Speech from Hamlet pulled from: https://www.poetryfoundation.org/poems/56965/speech-to-be-or-not-to-be-that-is-the-question heading and all-->
+        <h2>Speech: “To be, or not to be, that is the question” BY WILLIAM SHAKESPEARE</h2>
+        <p><span id = "To be or not to be">_________</span> To be, or not to be, that is the question:
+            <!-- got this from the assignment instructions on BlackBoard https://cyberactive.bellevue.edu/ultra/courses/_527406_1/cl/outline and updated it to match my code-->
+            <button type="button" onclick="document.getElementById('To be or not to be').innerHTML = FirstLine">To be or not to be</button> <br />  
+            Whether 'tis nobler in the mind to suffer
+            The slings and arrows of outrageous fortune,
+            Or to take arms against a sea of troubles
+            And by opposing end them. To die—to sleep,
+            No more; and by a sleep to say we end
+            The <span id = "heart-ache and the thousand natural shocks">_________</span> 
+            <button type="button" onclick="document.getElementById('heart-ache and the thousand natural shocks').innerHTML = SecLine">heart-ache and the thousand natural shocks</button> 
+             <br />  
+            heart-ache and the thousand natural shocks
+            That flesh is heir to: 'tis a consummation
+            Devoutly to be wish'd. To die, to sleep;
+            To sleep, perchance to dream—ay, there's the rub:
+            For in that <span id = "sleep of death what dreams may come">_________</span> sleep of death what dreams may come,
+            <button type="button" onclick="document.getElementById('sleep of death what dreams may come').innerHTML = ThirdLine">sleep of death what dreams may come</button> 
+            <br />  
+            When we have shuffled off this mortal coil,
+            Must give us pause—there's the respect
+            That makes calamity of so long life. </p>
+
+        <p>For who would bear the whips and scorns of time,
+            Th'oppressor's wrong, the proud man's contumely,
+            The pangs of dispriz'd <span id = "love, the laws delay">_________</span> love, the law's delay,
+            <button type="button" onclick="document.getElementById('love, the laws delay').innerHTML = LastLine">love, the laws delay</button> 
+            <br />  
+            The insolence of office, and the spurns
+            That patient merit of th'unworthy takes,
+            When he himself might his quietus make
+            With a bare bodkin? Who would fardels bear,
+            To grunt and sweat under a weary life,
+            But that the dread of something after death,
+            The undiscovere'd country, from whose bourn
+            No traveller returns, puzzles the will,
+            And makes us rather bear those ills we have
+            Than fly to others that we know not of?</p>
+
+        <p>Thus conscience doth make cowards of us all,
+            And thus the native hue of resolution
+            Is sicklied o'er with the pale cast of thought,
+            And enterprises of great pith and moment
+            With this regard their currents turn awry
+            And lose the name of action.</p>
+
+    </div>
+
+</body>
+
+</html>
