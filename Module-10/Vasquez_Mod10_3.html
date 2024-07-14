@@ -1,0 +1,105 @@
+<!--Kristina Vasquez - CSD340-J308 - Assignment 10.3-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    
+    <!-- Pulled Meta Tags from the book and tweaked it to make my own with the exception of "pragma"-->
+    <!-- Duckett, J. (n.d.). HTML and CSS. Retrieved from https://platform.virdocs.com/read/548314/199/#/4/4 -->
+    <meta name="description" content="An introduction to me, Kristina" />
+    <meta name="keywords" content="Kristina, Vasquez, Bellevue"  />
+    <meta http-equiv="author" content="Kristina Vasquez" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+        
+    <!-- Grabbed this code and a href code from example 10 and altered it for this assignment-->
+    <script>
+        function displayImage(imageFile){
+            var largerImage = document.getElementById("mainImage");
+            var newNode = document.createElement("img");
+            newNode.id = "mainImage";
+            newNode.src = imageFile;
+            newNode.alt = "Large Image";
+            newNode.className = "mainImage";
+            newNode.style.width = "300px";
+            newNode.style.height = "200px";
+            largerImage.parentNode.replaceChild(newNode, largerImage);
+            
+          }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="Vasquez_Mod10_3.css" hight="300px" width="200px"/>
+</head>
+<body>
+    <div id="container">
+        <h1 class="playwrite-cu-header">Assignment 10.3: JavaScript - Part 2</h1>
+
+        <p class="goudy-bookletter-1911-regular">There are a couple of places I have on my bucket list to visit for Autumn/ Spooky Season. 
+        I absolutely love Halloween and the fall season in general and would love to have a spooky road trip with my friends and family.</p>
+
+        <ul class="goudy-bookletter-1911-regular">
+            <li>Woodstock, Vermont – one look at the photos of this place in the Autumn and you will fall in love. 
+            All the vibrant colors and the architecture of the buildings makes it look like the most ideal place to spend the Halloween Season.</li>
+                <!-- got photos from https://wallpapers.com/images/hd/northern-vermont-in-autumn-o0vr6ksuc34sa5am.jpg and https://media.istockphoto.com/id/1222438280/photo/woodstock-vermont-middle-covered-bridge.jpg?s=612x612&w=0&k=20&c=WCpbtBFLb4m8XB2T2cSlMxOPxkD9fE4IpydpAOAOztE= -->
+            <a href=# 
+            onmouseover="Woodstock.src='woodstock1.jpg';"
+            onmouseout= "Woodstock.src='woodstock2.jpg';"
+            >
+           <img border = 0 name = "Woodstock" src = "woodstock1.jpg" height="300px" width="400px">
+            </a>
+
+            <li>New Orleans, Louisiana – This is probably the most haunted places to visit because of the history that lies in the town. 
+            I’ve only been there once when I was eight but never went on any ghost tours or visited the cemeteries. 
+            I would love to visit this place again to visit all the spooky sites and maybe get some beignets from Café du Monde.</li>
+            <!-- got photos from https://res.cloudinary.com/simpleview/image/upload/v1504111985/clients/neworleans/NOTMC_46022_9fe89c2a-88d8-4a4d-b0bf-d1e8175087bb.jpg and https://www.intownsuites.com/wp-content/uploads/2021/07/GettyImages-529679432-scaled-e1630074812451.jpg-->
+            <a href=#
+            onmouseover="neworleans.src='NOTMC_46022_9fe89c2a-88d8-4a4d-b0bf-d1e8175087bb.jpg';"
+            onmouseout= "neworleans.src='NO2.jpg';"
+            >
+           <img border = 0 name = "neworleans" src = "NOTMC_46022_9fe89c2a-88d8-4a4d-b0bf-d1e8175087bb.jpg" height="300px" width="400px">
+            </a>
+
+            <li>Sleepy Hallow, New York – The location that apparently hold the famous Headless Horseman, this is somewhere I would love to visit for the sites and the history.</li>
+           <!-- got images from https://img.cdn-pictorem.com/uploads/collection/M/MO1BIE2NBT/900_lq4a0071_1658742998.7784.jpg and https://www.boboandchichi.com/wp-content/uploads/Downtown-Sleepy-Hollow-New-York-on-Beekman-Avenue-in-Westchester-County-1024x684.jpg-->
+            <a href=#
+            onmouseover="SleepyHallow.src='SleepyHallow1.jpg';"
+            onmouseout= "SleepyHallow.src='SleepyHallow2.jpg';"
+            >
+            <img border = 0 name = "SleepyHallow" src = "SleepyHallow1.jpg" height="300px" width="400px">
+            </a>
+
+            <li>Estes Park, Colorado – I have visited Estes Park multiple times since it’s only a couple hours away. 
+            I have visited the Stanley Hotel, the inspiration for Stephen King’s novel the Shinning, but never done any of the fall festivities there. There is a ghost tour, 
+            a yearly Halloween masquerade ball and Oktoberfest!</li>
+                <!-- got images from https://coloradolivingblog.com/wp-content/uploads/2022/08/5-Fall-Getaways.png and https://i.pinimg.com/1200x/49/55/ef/4955efceefe162c3d2382604326faf1e.jpg-->
+            
+            <a href=#
+            onmouseover="EstesPark.src='EstesPark1.png';"
+            onmouseout= "EstesPark.src='EstesPark2.jpg';"
+            >
+            <img border = 0 name = "EstesPark" src = "EstesPark1.png" height="300px" width="400px">
+             </a>
+
+            <li>Salem, Massachusetts – This is one place that is spooky for its history but becomes even more so during the Halloween Season. 
+            People in Salem are obsessed with Halloween and all the decorations show in the town. </li>
+
+            <!-- got images from https://s3.us-west-2.amazonaws.com/images.actiontourguide.com/wp-content/uploads/2021/05/16095348/Salem-Witch-House-scaled-1.jpg and https://i.pinimg.com/originals/49/79/28/497928c524ac062bf40fe773c0b4a5de.jpg-->
+            <a href=#
+            onmouseover="Salem.src='Salem1.jpg';"
+            onmouseout= "Salem.src='Salem2.jpg';"
+            >
+            <img border = 0 name = "Salem" src = "Salem1.jpg" height="300px" width="400px">
+            </a>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
