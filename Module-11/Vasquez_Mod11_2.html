@@ -1,0 +1,61 @@
+
+<!--Kristina Vasquez - CSD340-J308 - Assignment 11.2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <meta name="description" content="Array list, Kristina">
+    <meta name="keywords" content="Kristina, Vasquez, Bellevue">
+    <meta name="author" content="Kristina Vasquez">
+    <meta http-equiv="cache-control" content="no-cache">
+    <script>
+        function addToShoppingList() {
+            let item = document.getElementById("groceryItem").value;
+            if (item.trim() !== '') {
+                console.log("Item added:", item);
+                let listContainer = document.getElementById("shoppingList");
+                let newItem = document.createElement("li");
+                newItem.textContent = item;
+                listContainer.appendChild(newItem);
+                document.getElementById("groceryItem").value = ''; // Clear input field
+            }
+        }
+
+        function displayList() {
+            let listItems = document.querySelectorAll("#shoppingList li");
+            let items = [];
+            listItems.forEach(item => {
+                items.push(item.textContent);
+            });
+            alert("Current Shopping List:\n\n" + items.join("\n"));
+        }
+
+        function removeLastItem() {
+            let listContainer = document.getElementById("shoppingList");
+            let lastItem = listContainer.lastElementChild;
+            if (lastItem) {
+                listContainer.removeChild(lastItem);
+                console.log("Last item removed:", lastItem.textContent);
+            } else {
+                alert("Shopping list is empty!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <p>Please type your item in the text box below to add to the grocery list</p>
+        
+        <label for="groceryItem">Item for List:</label>
+        <input type="text" id="groceryItem" name="groceryItem">
+        <button onclick="addToShoppingList()">Add to List</button>
+        
+        <button onclick="displayList()">Display</button>
+        <button onclick="removeLastItem()">Delete Last Entry</button>
+        
+        <ul id="shoppingList"></ul>
+    </div>
+</body>
+</html>
