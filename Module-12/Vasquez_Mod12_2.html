@@ -1,0 +1,105 @@
+<!--Kristina Vasquez - CSD340-J308 - Assignment 12.2-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+     <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <link rel="stylesheet" href="Vasquez_Mod12_2.css">
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .left, .right {
+            width: 45%;
+        }
+        button {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Assignment 12.2: JavaScript - Part 4</h1>
+            <h3>Top 10 Favorite Books</h3>
+            <button onclick="sortTopToBottom()">Top to Bottom</button>
+            <button onclick="sortBottomToTop()">Bottom to Top</button>
+            <hr>
+            <ol id="book-list">
+                <li>Of Mice and Men by John Steinbeck</li>
+                <li>The Angel of the Opera by Sam Siciliano</li>
+                <li>So This is Love: A Twisted Tale by Elizabeth Lim</li>
+                <li>Straight on Till Morning: A Twisted Tale by Elizabeth J. Braswell</li>
+                <li>Conceal, Don't Feel: A Twisted Tale by Jen Calonita</li>
+                <li>Unbirthday: A Twisted Tale by Elizabeth J. Braswell</li>
+                <li>Mexican Gothic by Silvia Moreno-Garcia</li>
+                <li>Mirror, Mirror: A Twisted Tale by Jen Calonita</li>
+                <li>The Princess Bride by William Goldman (with autograph from Cary Elwes I got from Comic Con)</li>
+                <li>The Shadow of the Wind by Carlos Ruiz Zafón</li>
+            </ol>
+        </div>
+        <div class="right">
+            <h3>5 Things I’ve Learned Since the Course Started</h3>
+            <ul>
+                <li>I need to double and triple check my work</li>
+                <li>Syntax is something that can trip you up</li>
+                <li>Relearning CSS</li>
+                <li>Relearning how to use some of the HTML tags</li>
+                <li>How to use the div tags</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Array of book titles with their original spot
+        const books = [
+            { name: "Of Mice and Men by John Steinbeck", spot: 0 },
+            { name: "The Angel of the Opera by Sam Siciliano", spot: 1 },
+            { name: "So This is Love: A Twisted Tale by Elizabeth Lim", spot: 2 },
+            { name: "Straight on Till Morning: A Twisted Tale by Elizabeth J. Braswell", spot: 3 },
+            { name: "Conceal, Don't Feel: A Twisted Tale by Jen Calonita", spot: 4 },
+            { name: "Unbirthday: A Twisted Tale by Elizabeth J. Braswell", spot: 5 },
+            { name: "Mexican Gothic by Silvia Moreno-Garcia", spot: 6 },
+            { name: "Mirror, Mirror: A Twisted Tale by Jen Calonita", spot: 7 },
+            { name: "The Princess Bride by William Goldman (with autograph from Cary Elwes I got from Comic Con)", spot: 8 },
+            { name: "The Shadow of the Wind by Carlos Ruiz Zafón", spot: 9 }
+        ];
+
+        // Function to display books in ascending order
+        function sortTopToBottom() {
+            const sortedBooks = [...books].sort((a, b) => a.spot - b.spot);
+            displayBooks(sortedBooks);
+        }
+
+        // Function to display books in descending order
+        function sortBottomToTop() {
+            const sortedBooks = [...books].sort((a, b) => b.spot - a.spot);
+            displayBooks(sortedBooks);
+        }
+
+        // Function to display books in the list
+        function displayBooks(bookArray) {
+            const bookList = document.getElementById('book-list');
+            bookList.innerHTML = '';
+            bookArray.forEach(book => {
+                const listItem = document.createElement('li');
+                listItem.textContent = book.name;
+                bookList.appendChild(listItem);
+            });
+        }
+    </script>
+    
+    
+    <div class="footer">
+        <a href="https://github.com/KristinaVasquez0797/csd-340">Back to Landing Page</a>
+    </div>
+
+</body>
+</html>
